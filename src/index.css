@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"rel="stylesheet');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 
+           transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300
+           transform hover:-translate-y-1;
+  }
+}
+
+@keyframes border-rgb {
+  0% { border-color: rgba(253, 34, 34, 0.568); }
+  25% { border-color: rgba(245, 241, 8, 0.788); }
+  50% { border-color: rgba(5, 248, 37, 0.849); }
+  75% { border-color: rgba(255, 23, 158, 0.877); }
+  100% { border-color: rgba(0, 17, 255, 0.925); }
+  100% { border-color: rgba(245, 241, 10, 0.925); }
+}
+
+@keyframes gradient-rgb {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-border-rgb {
+  animation: border-rgb 3s infinite;
+}
+
+.animate-gradient-rgb {
+  animation: gradient-rgb 6s infinite;
+}
+
+.glassmorphism-card {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(4, 35, 9, 0.99);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* @keyframes fondo-animado {
+  0% { background: #ff7eb3; }
+  50% { background: #ff758c; }
+  100% { background: #ff7eb3; }
+}
+
+.bg-animado {
+  animation: fondo-animado 6s infinite alternate;
+} */
+
