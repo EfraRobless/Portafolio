@@ -46,7 +46,7 @@ const Hero = () => {
       className="mt-6 md:mt-8 p-3 sm:p-4 bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg flex flex-wrap justify-center gap-4 border border-gray-700/50 max-w-md mx-auto"
     >
       <SocialLink 
-        href="https://www.facebook.com"
+        href="https://www.facebook.com/efrain.balabarcarobles/"
         icon={<Facebook size={20} strokeWidth={1.5} />}
         label="Facebook"
         hoverColor="#1877f2"
