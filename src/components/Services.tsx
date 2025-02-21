@@ -97,99 +97,360 @@
 // export default Services;
 
 
-import React from 'react';
+// import React from 'react';
+// import { motion } from 'framer-motion';
+// import { Code2, Smartphone, Globe, LineChart } from 'lucide-react';
+
+// const services = [
+//   {
+//     icon: <Code2 size={60} />, 
+//     title: 'Desarrollo Web',
+//     description: 'Creación de sitios web modernos y aplicaciones web utilizando las últimas tecnologías.',
+//   },
+//   {
+//     icon: <Smartphone size={60} />,
+//     title: 'Desarrollo Mobile',
+//     description: 'Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.',
+//   },
+//   {
+//     icon: <Globe size={60} />,
+//     title: 'Software a Medida',
+//     description: 'Soluciones de software personalizadas para satisfacer las necesidades específicas de tu negocio.',
+//   },
+//   {
+//     icon: <LineChart size={60} />,
+//     title: 'Consultoría',
+//     description: 'Asesoramiento técnico y estratégico para optimizar tus proyectos digitales.',
+//   },
+// ];
+
+// const Services = () => {
+//   return (
+//     <section
+//       id="services"
+//       className="min-h-screen flex items-center justify-center"
+//     >
+//       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 py-20">
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+//           {/* Mensaje llamativo y descripción */}
+//           <motion.div
+//             initial={{ opacity: 0, x: -20 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             viewport={{ once: true }}
+//             transition={{ duration: 0.9 }}
+//             className="text-center lg:text-left flex flex-col justify-center"
+//           >
+//             <h2 className="text-sm md:text-1xl text-green-600 mb-6">
+//               Mis Servicios
+//             </h2>
+//             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+//               ¿Cómo puedo ayudarte?
+//             </h2>
+//             <p className="text-base text-gray-300 mb-8 text-justify">
+//               "Transformo ideas en soluciones digitales personalizadas 
+//               que potencian tu negocio. Estoy aquí para ayudarte 
+//               a alcanzar tus objetivos con profesionalismo y compromiso. 
+//               ¡Hablemos y llevemos tu proyecto al siguiente nivel!"
+//             </p>
+//             <motion.button
+//               whileHover={{ scale: 1.05 }}
+//               whileTap={{ scale: 0.95 }}
+//               className="px-6 py-3 bg-green-700 text-black rounded-lg  hover:bg-transparent hover:text-white 
+//               hover:border-white border-2 border-black transition-all duration-300 self-start"
+//               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}  
+//             >
+//               CONTÁCTAME
+//             </motion.button>
+//           </motion.div>
+
+//           {/* Servicios en cuadros de texto */}
+//           <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
+//             {services.map((service, index) => (
+//               <motion.div
+//                 key={service.title}
+//                 initial={{ opacity: 0, y: 20 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ delay: index * 0.2 }}
+//                 className="glassmorphism-card p-4 w-full rounded-lg backdrop-filter backdrop-blur-lg 
+//                 bg-opacity-20 border border-gray-700 hover:border-green-400 transition-all duration-300 flex items-start space-x-6 items-center"
+//               >
+//                 {/* Icono con efecto de hover */}
+//                 <div className="text-green-600 hover:text-green-300 transition-all duration-300 flex-shrink-0">
+//                   {React.cloneElement(service.icon, { className: "text-current hover:scale-110 transition-all duration-300" })}
+//                 </div>
+//                 <div>
+//                   <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
+//                   <p className="text-gray-300">{service.description}</p>
+//                 </div>
+//               </motion.div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Services;
+
+// import React from 'react';
+// import { motion } from 'framer-motion';
+// import { Code2, Smartphone, Globe, LineChart } from 'lucide-react';
+
+// const services = [
+//   {
+//     icon: <Code2 size={60} />, 
+//     title: 'Desarrollo Web',
+//     description: 'Creación de sitios web modernos y aplicaciones web utilizando las últimas tecnologías.',
+//   },
+//   {
+//     icon: <Smartphone size={60} />,
+//     title: 'Desarrollo Mobile',
+//     description: 'Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.',
+//   },
+//   {
+//     icon: <Globe size={60} />,
+//     title: 'Software a Medida',
+//     description: 'Soluciones de software personalizadas para satisfacer las necesidades específicas de tu negocio.',
+//   },
+//   {
+//     icon: <LineChart size={60} />,
+//     title: 'Consultoría',
+//     description: 'Asesoramiento técnico y estratégico para optimizar tus proyectos digitales.',
+//   },
+// ];
+
+// const Services = () => {
+//   return (
+//     <section
+//       id="services"
+//       className="min-h-screen flex items-center justify-center"
+//     >
+//       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 py-20">
+//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+//           {/* Mensaje llamativo y descripción */}
+//           <motion.div
+//             initial={{ opacity: 0, x: -20 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             viewport={{ once: true }}
+//             transition={{ duration: 0.9 }}
+//             className="text-center lg:text-left flex flex-col justify-center"
+//           >
+//             <h2 className="text-sm md:text-1xl text-green-600 mb-6">
+//               Mis Servicios
+//             </h2>
+//             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+//               ¿Cómo puedo ayudarte?
+//             </h2>
+//             <p className="text-base text-gray-300 mb-8 text-justify">
+//               "Transformo ideas en soluciones digitales personalizadas 
+//               que potencian tu negocio. Estoy aquí para ayudarte 
+//               a alcanzar tus objetivos con profesionalismo y compromiso. 
+//               ¡Hablemos y llevemos tu proyecto al siguiente nivel!"
+//             </p>
+//             <motion.button
+//               whileHover={{ scale: 1.05 }}
+//               whileTap={{ scale: 0.95 }}
+//               className="px-6 py-3 bg-green-700 text-black rounded-lg  hover:bg-transparent hover:text-white 
+//               hover:border-white border-2 border-black transition-all duration-300 self-start"
+//               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}  
+//             >
+//               CONTÁCTAME
+//             </motion.button>
+//           </motion.div>
+
+//           {/* Servicios en cuadros de texto */}
+//           <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
+//             {services.map((service, index) => (
+//               <motion.div
+//                 key={service.title}
+//                 initial={{ opacity: 0, y: 20 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ delay: index * 0.2 }}
+//                 className="glassmorphism-card p-4 w-full rounded-lg backdrop-filter backdrop-blur-lg 
+//                 bg-opacity-20 border border-gray-700 hover:border-green-400 transition-all duration-300 flex items-start space-x-6 items-center"
+//               >
+//                 {/* Icono con efecto de hover */}
+//                 <div className="text-green-600 hover:text-green-300 transition-all duration-300 flex-shrink-0">
+//                   {React.cloneElement(service.icon, { className: "text-current hover:scale-110 transition-all duration-300" })}
+//                 </div>
+//                 <div>
+//                   <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
+//                   <p className="text-gray-300">{service.description}</p>
+//                 </div>
+//               </motion.div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Services;
+
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Smartphone, Globe, LineChart } from 'lucide-react';
 
-const services = [
-  {
-    icon: <Code2 size={60} />, 
-    title: 'Desarrollo Web',
-    description: 'Creación de sitios web modernos y aplicaciones web utilizando las últimas tecnologías.',
-  },
-  {
-    icon: <Smartphone size={60} />,
-    title: 'Desarrollo Mobile',
-    description: 'Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.',
-  },
-  {
-    icon: <Globe size={60} />,
-    title: 'Software a Medida',
-    description: 'Soluciones de software personalizadas para satisfacer las necesidades específicas de tu negocio.',
-  },
-  {
-    icon: <LineChart size={60} />,
-    title: 'Consultoría',
-    description: 'Asesoramiento técnico y estratégico para optimizar tus proyectos digitales.',
-  },
-];
+// Componente para cada servicio individual
+const ServiceCard = ({ icon, title, description, index }) => {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { 
+        delay: index * 0.15,
+        duration: 0.5,
+        ease: 'easeOut'
+      }
+    }
+  };
+
+  return (
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-50px" }}
+      className="glassmorphism-card p-4 sm:p-5 w-full rounded-lg backdrop-filter backdrop-blur-lg 
+      bg-opacity-20 border border-gray-700 hover:border-green-400 transition-all duration-300 
+      flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6"
+    >
+      <div className="text-green-600 hover:text-green-300 transition-all duration-300 flex-shrink-0 mb-2 sm:mb-0">
+        {React.cloneElement(icon, { 
+          className: "text-current transition-all duration-300 hover:scale-110",
+          size: {
+            default: 50,
+            sm: 55,
+            md: 60
+          }[window.innerWidth < 640 ? 'default' : window.innerWidth < 768 ? 'sm' : 'md']
+        })}
+      </div>
+      <div className="text-center sm:text-left">
+        <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+        <p className="text-gray-300 text-sm sm:text-base">{description}</p>
+      </div>
+    </motion.div>
+  );
+};
 
 const Services = () => {
+  // Memoizamos los servicios para evitar recreaciones innecesarias
+  const servicesList = useMemo(() => [
+    {
+      icon: <Code2 aria-hidden="true" />, 
+      title: 'Desarrollo Web',
+      description: 'Creación de sitios web modernos y aplicaciones web utilizando las últimas tecnologías.',
+    },
+    {
+      icon: <Smartphone aria-hidden="true" />,
+      title: 'Desarrollo Mobile',
+      description: 'Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.',
+    },
+    {
+      icon: <Globe aria-hidden="true" />,
+      title: 'Software a Medida',
+      description: 'Soluciones de software personalizadas para satisfacer las necesidades específicas de tu negocio.',
+    },
+    {
+      icon: <LineChart aria-hidden="true" />,
+      title: 'Consultoría',
+      description: 'Asesoramiento técnico y estratégico para optimizar tus proyectos digitales.',
+    },
+  ], []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { 
+        staggerChildren: 0.2,
+        delayChildren: 0.3
+      }
+    }
+  };
+  
+  const headerVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { 
+        duration: 0.7,
+        ease: 'easeOut'
+      }
+    }
+  };
+
   return (
     <section
       id="services"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center py-16 sm:py-20 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Mensaje llamativo y descripción */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9 }}
+            variants={headerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
             className="text-center lg:text-left flex flex-col justify-center"
           >
-            <h2 className="text-sm md:text-1xl text-green-600 mb-6">
+            <h2 className="text-sm md:text-base lg:text-lg font-medium text-green-600 mb-4 sm:mb-6">
               Mis Servicios
             </h2>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8">
               ¿Cómo puedo ayudarte?
-            </h2>
-            <p className="text-base text-gray-300 mb-8 text-justify">
-              "Transformo ideas en soluciones digitales personalizadas 
+            </h3>
+            <p className="text-base text-gray-300 mb-8 leading-relaxed sm:leading-relaxed lg:pr-12">
+              Transformo ideas en soluciones digitales personalizadas 
               que potencian tu negocio. Estoy aquí para ayudarte 
               a alcanzar tus objetivos con profesionalismo y compromiso. 
-              ¡Hablemos y llevemos tu proyecto al siguiente nivel!"
+              ¡Hablemos y llevemos tu proyecto al siguiente nivel!
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-green-700 text-black rounded-lg  hover:bg-transparent hover:text-white 
-              hover:border-white border-2 border-black transition-all duration-300 self-start"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}  
-            >
-              CONTÁCTAME
-            </motion.button>
+            <div className="flex justify-center lg:justify-start">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 bg-green-700 text-white font-medium rounded-lg
+                hover:bg-transparent hover:text-white border-2 border-green-700 hover:border-white
+                transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
+                focus:ring-offset-gray-900"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                aria-label="Contactar para servicios"
+              >
+                CONTÁCTAME
+              </motion.button>
+            </div>
           </motion.div>
 
           {/* Servicios en cuadros de texto */}
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
-            {services.map((service, index) => (
-              <motion.div
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid grid-cols-1 gap-4 sm:gap-6"
+          >
+            {servicesList.map((service, index) => (
+              <ServiceCard
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className="glassmorphism-card p-4 w-full rounded-lg backdrop-filter backdrop-blur-lg 
-                bg-opacity-20 border border-gray-700 hover:border-green-400 transition-all duration-300 flex items-start space-x-6 items-center"
-              >
-                {/* Icono con efecto de hover */}
-                <div className="text-green-600 hover:text-green-300 transition-all duration-300 flex-shrink-0">
-                  {React.cloneElement(service.icon, { className: "text-current hover:scale-110 transition-all duration-300" })}
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-gray-300">{service.description}</p>
-                </div>
-              </motion.div>
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                index={index}
+              />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default React.memo(Services);
