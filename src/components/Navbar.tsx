@@ -27,7 +27,7 @@ const Navbar = () => {
     { name: 'Servicios', href: '#services', icon: Briefcase },
     { name: 'Portafolio', href: '#portfolio', icon: FolderOpen },
     { name: 'Testimonios', href: '#testimonials', icon: MessageCircle },
-    { name: 'Contacto', href: '#contact', icon: Mail },
+    { name: 'Contacto', href: '#contacto', icon: Mail },
   ];
 
   // Optimización: Usar Intersection Observer para detectar secciones activas
@@ -237,9 +237,9 @@ const Navbar = () => {
             
             {/* CTA para contacto */}
             <a 
-              href="#contact"
-              onClick={(e) => handleNavClick(e, "#contact")}
-              className="ml-4 px-4 py-2 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center"
+              href="#contacto"
+              onClick={(e) => handleNavClick(e, "#contacto")}
+              className="ml-4 px-4 py-2 bg-gradient-to-r from-green-800 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center"
             >
               <Mail className="w-4 h-4 mr-2" />
               <span>Contáctame</span>
@@ -297,7 +297,7 @@ const Navbar = () => {
             <div className="pt-2 pb-1">
               <a
                 href="#contact"
-                onClick={(e) => handleNavClick(e, "#contact")}
+                onClick={(e) => handleNavClick(e, "#contacto")}
                 className="block w-full text-center px-4 py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-md shadow-md"
               >
                 Contáctame
@@ -308,7 +308,7 @@ const Navbar = () => {
       </div>
       
       {/* Estilos adicionales para efectos avanzados */}
-      <style jsx>{`
+      <style jsx >{`
         @keyframes gradient {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }

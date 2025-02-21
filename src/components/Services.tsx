@@ -124,11 +124,11 @@ const Services = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-green-700 text-white font-medium rounded-lg
+                className="px-6 py-3 bg-green-800 text-white font-medium rounded-lg
                 hover:bg-transparent hover:text-white border-2 border-green-700 hover:border-white
                 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
                 focus:ring-offset-gray-900"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
                 aria-label="Contactar para servicios"
               >
                 CONTÁCTAME

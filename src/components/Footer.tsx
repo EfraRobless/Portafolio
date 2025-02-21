@@ -20,25 +20,26 @@ const Footer = () => {
     {
       href: "https://github.com/EfraRobless",
       icon: Github,
-      hoverColor: "text-gray-400",
+      hoverColor: "flex items-center hover:text-gray-600 transition-colors duration-100",
       ariaLabel: "GitHub de Efrain Robles"
     },
     {
       href: "https://www.linkedin.com/in/efrain-robles-4487a8330/",
       icon: Linkedin,
-      hoverColor: "text-blue-500",
+      hoverColor: "flex items-center hover:text-blue-400 transition-colors duration-100",
       ariaLabel: "LinkedIn de Efrain Robles"
     },
     {
       href: "https://www.instagram.com/ef_robless/",
       icon: Instagram,
-      hoverColor: "text-pink-700",
+      hoverColor: "flex items-center hover:text-pink-600 transition-colors duration-100",
       ariaLabel: "Instagram de Efrain Robles"
+      
     },
     {
       href: "https://www.facebook.com/efrain.balabarcarobles?locale=es_LA",
       icon: Facebook,
-      hoverColor: "text-blue-700",
+      hoverColor: "flex items-center hover:text-blue-700 transition-colors duration-100",
       ariaLabel: "Facebook de Efrain Robles"
     }
   ];

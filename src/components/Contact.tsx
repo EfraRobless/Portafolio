@@ -154,7 +154,7 @@ const Contacto = () => {
       
       // Enviamos el formulario usando fetch a un servicio como Formspree
       // Asegurando que los datos lleguen a tu email personal
-      const response = await fetch('https://formspree.io/f/xyyqzgwk', {
+      const response = await fetch('https://formspree.io/f/xqaejabr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
